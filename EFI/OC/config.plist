@@ -637,9 +637,16 @@
 			</array>
 		</dict>
 		<key>LegacyOverwrite</key>
-		<false/>
+		<true/>
 		<key>LegacySchema</key>
-		<dict/>
+		<dict>
+			<key>7C436110-AB2A-4BBB-A880-F4BEF2CBCF7</key>
+			<string>Enabled</string>
+			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B30102</key>
+			<string>Enabled</string>
+			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
+			<string>Enabled</string>
+		</dict>
 		<key>WriteFlash</key>
 		<true/>
 	</dict>
