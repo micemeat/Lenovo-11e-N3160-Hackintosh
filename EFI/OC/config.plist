@@ -18,7 +18,7 @@
 				<key>Comment</key>
 				<string>Sets plugin-type to 1 on first Processor object</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-PLUG.aml</string>
 			</dict>
@@ -1453,7 +1453,7 @@
 			<key>AppleCpuPmCfgLock</key>
 			<true/>
 			<key>AppleXcpmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmExtraMsrs</key>
 			<true/>
 			<key>AppleXcpmForceBoost</key>
@@ -1613,7 +1613,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>Default</string>
+			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1693,7 +1693,7 @@
 				<data>
 				</data>
 			</dict>
-			<key>7C436110-AB2A-4BBB-A880-F4BEF2CBCF7</key>
+			<key>7C436110-AB2A-4BBB-A880-F4BEF2CBCF52</key>
 			<dict>
 				<key>boot-args</key>
 				<data>
@@ -1703,7 +1703,7 @@
 				</data>
 				<key>csr-active-config</key>
 				<data>
-				AAAAAA==
+				ZwAAAA==
 				</data>
 				<key>prev-lang:kbd</key>
 				<string>en-AU:0</string>
@@ -1877,11 +1877,11 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
-				<string>HFS+ filesystem (Legacy for Braswell firmware)</string>
+				<string>OpenHfsPlus - HFS+ filesystem support</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>HfsPlusLegacy.efi</string>
+				<string>OpenHfsPlus.efi</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
