@@ -1877,9 +1877,9 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
-				<string>OpenHfsPlus - HFS+ filesystem support</string>
+				<string>DISABLED - fails to load on Braswell UEFI (Invalid Parameter). Catalina uses APFS, HFS+ not needed.</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>OpenHfsPlus.efi</string>
 			</dict>
