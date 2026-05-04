@@ -165,14 +165,16 @@ Should work with SMCBatteryManager. If not showing:
 | `debug=0x100` | Debug kernel on panic |
 | `keepsyms=1` | Keep panic symbols |
 | `alcid=28` | Audio layout ID for ALC298 |
-| `-liludbg` | Lilu debug logging |
-| `-wegnoegpu` | Disable external GPU |
+| `-disablegfxfirmware` | Disable unsupported GFX firmware load |
+| `-igfxblr` | Backlight register fix for HD 400 |
+| `-igfxbls` | Disable backlight smooth transitions |
+| `igfxfcms=1` | Force color management mode 1 |
 
 ## SMBIOS Info
 - **Model**: MacBookAir7,1
-- **Serial**: C02Q31J2G8MC
-- **MLB**: C02721904QXH2VK1C
-- **UUID**: A1B2C3D4-E5F6-7890-ABCD-EF1234567890
+- **Serial**: C0241VIGTG8MC
+- **MLB**: C0241VIGTG8MCLCYY0
+- **UUID**: 11335BC7-32B2-4031-A322-52670A006A6D
 
 ⚠️ **Regenerate serials before using iMessage!** Use GenSMBIOS or macserial:
 ```bash
