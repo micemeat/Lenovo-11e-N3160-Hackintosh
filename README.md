@@ -1,9 +1,10 @@
-# Lenovo 11e Gen 5 (Celeron N3160) - OpenCore Hackintosh EFI
+# Lenovo ThinkPad 11e (3rd Gen) — Intel Celeron N3160 (Braswell) - OpenCore Hackintosh EFI
 
 ## Hardware
 | Component | Spec |
 |-----------|------|
 | CPU | Intel Celeron N3160 (Braswell, 4C/4T, 1.6GHz / 2.24GHz burst) |
+| **Note** | This is the **3rd Gen** Lenovo 11e (model 20GG/20GH), NOT the 5th Gen Yoga |
 | GPU | Intel HD Graphics 400 (Gen8 LP) |
 | Display | 11.6" Touchscreen (1366x768) |
 | RAM | 4GB DDR3L |
@@ -18,9 +19,11 @@
 
 ## ⚠️ Important: macOS Version Limit
 
-**This build targets macOS 10.15 Catalina as the maximum supported version.**
+**This build targets macOS 10.15 Catalina as the MAXIMUM supported version.**
 
 The Intel HD Graphics 400 (Gen8 LP) in the N3160 does **NOT** have Metal support, which is required for macOS 11 Big Sur and later. There is no workaround for this — it's a hardware limitation.
+
+Additionally, the Celeron N3160 lacks SSE4.2 — the `AAAMouSSE.kext` emulates this, but it can be unstable. If you get random kernel panics, try disabling it.
 
 **Supported versions:**
 | Version | Support |
@@ -57,7 +60,7 @@ The Intel HD Graphics 400 (Gen8 LP) in the N3160 does **NOT** have Metal support
 ## OpenCore Version
 - **OpenCore 1.0.7** (March 2026)
 
-## Key Differences from Kaby Lake Build (i3-7100U)
+## Key Differences from the Yoga 11e Gen 5 (Kaby Lake i3-7100U) Build
 This EFI is specifically built for the **Braswell** Celeron N3160. Do NOT use the Kaby Lake EFI on this machine:
 
 | Setting | Kaby Lake (i3-7100U) | Braswell (N3160) |
