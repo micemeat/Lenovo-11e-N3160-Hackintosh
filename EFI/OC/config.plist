@@ -1877,21 +1877,11 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
-				<string>DISABLED - fails to load on Braswell UEFI (Invalid Parameter). Catalina uses APFS, HFS+ not needed.</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>OpenHfsPlus.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Runtime services</string>
+				<string>NVMe boot support pre-Skylake</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>OpenRuntime.efi</string>
+				<string>NvmExpressDxe.efi</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1917,6 +1907,16 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
+				<string>Runtime services</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>OpenRuntime.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
 				<string>Boot picker GUI</string>
 				<key>Enabled</key>
 				<true/>
@@ -1937,11 +1937,11 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
-				<string>NVMe boot pre-Skylake</string>
+				<string>DISABLED - fails on Braswell UEFI</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
-				<string>NvmExpressDxe.efi</string>
+				<string>OpenHfsPlus.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
@@ -2048,7 +2048,7 @@
 			<key>ActivateHpetSupport</key>
 			<false/>
 			<key>DisableSecurityPolicy</key>
-			<false/>
+			<true/>
 			<key>EnableVectorAcceleration</key>
 			<true/>
 			<key>EnableVmx</key>
@@ -2076,7 +2076,7 @@
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>ReservedMemory</key>
 		<array>
